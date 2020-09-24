@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Loan calaculator tool with Java GUI,
+ * This tool is meant to do simple interest calculations on short term loans
+ * Feel free to download and modify to suit your needs. 
  */
 package com.mycompany.loanbalcalculator;
 
@@ -11,7 +11,6 @@ package com.mycompany.loanbalcalculator;
  */
 import java.time.LocalDate;
 import java.time.ZoneId;
-import java.util.Scanner;
         
 public class LoanCalculatorGUI extends javax.swing.JFrame {
     
@@ -255,7 +254,7 @@ public class LoanCalculatorGUI extends javax.swing.JFrame {
             interest = Float.parseFloat(jTextField2.getText());
             principal = Float.parseFloat(jTextField1.getText());
             
-            
+            //running the interest and amount due calculations
             interestDue = (principal - currentPayment) * interest/100;
             payableAmount = (principal - currentPayment) + interestDue;
             
